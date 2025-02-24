@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII</title>
-    <link rel="stylesheet" href="nav2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="Applications.css">
+    <link rel="stylesheet" href="/CII-Second/nav2.css">
+    <link rel="stylesheet" href="InstitutesApplied.css">
 </head>
 <body>
 
@@ -22,12 +22,12 @@
     <!-- Main Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.jpg" alt="CII Logo">
+            <img src="/CII-Second/images/logo.jpg" alt="CII Logo">
         </div>
         <ul class="nav-links">
             <li><a href="/CII-Second/index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="/CII-Second/industry.html">Industries</a></li>
+            <li><a href="../dashboard/industry.html">Industries</a></li>
             <li><a href="#">Institutions</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Login</a></li>
@@ -36,24 +36,23 @@
 
     <div class="sidebar">
         <ul>
-            <li><a href="/CII-Second/industry.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="/CII-Second/Applications.html"><i class="fas fa-user"></i> View Applications</a></li>
-            <li><a href="/CII-Second/post.html"><i class="fas fa-briefcase"></i> Manage Posts</a></li>
+            <li><a href="../../dashboard/industry.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../Applications.html"><i class="fas fa-user"></i> View Applications</a></li>
+            <li><a href="../../posts/post.html"><i class="fas fa-briefcase"></i> Manage Posts</a></li>
         </ul>
     </div>
 
-   <div class="main">
-    <div class="bg-blue-50 min-h-screen w-full">
-        <h1 class="text-center lg-text-4xl md-text-2xl sm-text-xl font-bold mb-4 py-6 bg-gray-800 text-white p-4 shadow-md">
-            Select Opening to View Applications
-        </h1>
-        <div id="industry-container" class="flex flex-wrap max-w-7xl justify-center">
-            <p id="loading-text" class="text-gray-600">Loading industries...</p>
-            <p id="error-text" class="text-red-500" style="display: none;"></p>
+    <div class="main">
+        <div class="container">
+            <h1 class="title">Institutes Applied</h1>
+            <div id="institutions-container" class="institutions-wrapper">
+                <p class="loading-text">Loading...</p>
+            </div>
         </div>
     </div>
-   </div>
 
-    <script src="Applications.js"></script>
+   
+
+    <script src="InstitutesApplied.js"></script>
 </body>
 </html>

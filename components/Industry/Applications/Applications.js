@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Stipend: ${industry.stipend !== undefined ? `₹${industry.stipend}` : "Not specified"}</p>
             <p>Opening Date: ${industry.opening_date ? new Date(industry.opening_date).toLocaleDateString() : "N/A"}</p>
             <p>Total Vacancies: ${industry.totalVacancies || "Not specified"}</p>
-            <a href="InstitutesApplied.html" class="btn">View Institutes Applied</a>
+            <a href="InstitutesApplied/InstitutesApplied.html" class="btn">View Institutes Applied</a>
         `;
 
         return card;
