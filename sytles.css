@@ -435,7 +435,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -455,4 +455,111 @@ footer {
     .social-icons {
         justify-content: center;
     }
+} */
+
+/* General Mobile Styling */
+@media (max-width: 768px) {
+    /* Adjust Slider */
+    .slider-container {
+        max-height: 300px;
+    }
+
+    .slide img {
+        height: 300px;
+    }
+
+    /* Navigation Buttons */
+    .prev, .next {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    /* Industries Section */
+    .industries-slider {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .industry-slide {
+        min-width: 80%;
+        scroll-snap-align: center;
+    }
+
+    /* Footer */
+    .footer-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* Cards */
+    .card {
+        width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Adjust Buttons */
+    .view-button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
+
