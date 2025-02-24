@@ -61,7 +61,7 @@
 
 /* Text Box */
 .text-box {
-    position: absolute;
+    position: relative;
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
