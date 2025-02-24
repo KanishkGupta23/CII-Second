@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CII</title>
+    <link rel="stylesheet" href="industry.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button id="toggleSidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="/industry.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/industries/applications"><i class="fas fa-user"></i> View Applications</a></li>
+            <li><a href="/industries/openings"><i class="fas fa-book"></i> Manage Openings</a></li>
+            <li><a href="/EventFrom.html"><i class="fas fa-briefcase"></i> Manage Projects</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="dashboard">
+        <h1 class="dashboard-title">Industry Dashboard</h1>
+
+        <!-- Stats Cards -->
+        <div class="stats-container">
+            <div class="card">
+                <h2>Total Students</h2>
+                <p id="totalStudents">0</p>
+            </div>
+            <div class="card">
+                <h2>Total Openings</h2>
+                <p id="totalOpenings">0</p>
+            </div>
+            <div class="card">
+                <h2>Total Institutes</h2>
+                <p id="totalInstitutes">0</p>
+            </div>
+            <div class="card">
+                <h2>Total Applications</h2>
+                <p id="totalApplications">0</p>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-container">
+            <div class="chart-box">
+                <h3>Applications Over Time</h3>
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Application Distribution</h3>
+                <canvas id="doughnutChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="industry.js"></script>
+</body>
+</html>
