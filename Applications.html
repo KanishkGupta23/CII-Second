@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII</title>
-    <link rel="stylesheet" href="industry.css">
     <link rel="stylesheet" href="nav2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="Applications.css">
 </head>
 <body>
+
     <div class="top-bar">
         <span id="date-time"></span>
         <div class="social-icons">
@@ -34,7 +34,6 @@
         </ul>
     </nav>
 
-    <!-- Sidebar -->
     <div class="sidebar">
         <ul>
             <li><a href="/CII-Second/industry.html"><i class="fas fa-home"></i> Home</a></li>
@@ -43,45 +42,18 @@
         </ul>
     </div>
 
-    <!-- Main Content -->
-    <div class="dashboard">
-        <h1 class="dashboard-title">Industry Dashboard</h1>
-
-        <!-- Stats Cards -->
-        <div class="stats-container">
-            <div class="card">
-                <h2>Total Students</h2>
-                <p id="totalStudents">0</p>
-            </div>
-            <div class="card">
-                <h2>Total Openings</h2>
-                <p id="totalOpenings">0</p>
-            </div>
-            <div class="card">
-                <h2>Total Institutes</h2>
-                <p id="totalInstitutes">0</p>
-            </div>
-            <div class="card">
-                <h2>Total Applications</h2>
-                <p id="totalApplications">0</p>
-            </div>
-        </div>
-
-        <!-- Charts -->
-        <div class="charts-container">
-            <div class="chart-box">
-                <h3>Applications Over Time</h3>
-                <canvas id="barChart"></canvas>
-            </div>
-            <div class="chart-box">
-                <h3>Application Distribution</h3>
-                <canvas id="doughnutChart"></canvas>
-            </div>
+   <div class="main">
+    <div class="bg-blue-50 min-h-screen w-full">
+        <h1 class="text-center lg-text-4xl md-text-2xl sm-text-xl font-bold mb-4 py-6 bg-gray-800 text-white p-4 shadow-md">
+            Select Opening to View Applications
+        </h1>
+        <div id="industry-container" class="flex flex-wrap max-w-7xl justify-center">
+            <p id="loading-text" class="text-gray-600">Loading industries...</p>
+            <p id="error-text" class="text-red-500" style="display: none;"></p>
         </div>
     </div>
+   </div>
 
-    <script src="industry.js"></script>
-    
-
+    <script src="Applications.js"></script>
 </body>
 </html>

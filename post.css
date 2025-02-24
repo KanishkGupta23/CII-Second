@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
+    margin-top: 100px;
     padding: 20px;
 }
 
@@ -70,13 +71,25 @@ button:hover {
     margin-bottom: 5px;
 }
 
+.post {
+    margin-left: 230px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+.post-title {
+    text-align: center;
+    color: #333;
+}
+
 .sidebar {
     width: 250px;
     height: 100vh;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
+    background-color: #003366;
     color: white;
     position: fixed;
-    top: 0;
+    top: 110px;
     left: 0;
     padding-top: 20px;
     transition: transform 0.3s ease-in-out;
@@ -113,4 +126,3 @@ button:hover {
     left: 220px;
     cursor: pointer;
 }
-
