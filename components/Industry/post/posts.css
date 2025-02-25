@@ -1,85 +1,67 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     margin: 0;
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 110px;
+    padding: 0;
 }
-
-
 
 .container {
-    max-width: 600px;
-    background: white;
-    padding: 20px;
+    width: 80%;
     margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
     text-align: center;
 }
 
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-.hidden {
-    display: none;
+/* Post Card Styles */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .post-card {
+    width: 300px;
     background: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .post-card img {
-    max-width: 100%;
-    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .post-card h3 {
-    margin-bottom: 5px;
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
-.post {
-    margin-left: 230px;
-    padding: 20px;
-    width: calc(100% - 270px);
+.post-card p {
+    font-size: 0.9em;
+    color: #555;
 }
 
-.post-title {
-    text-align: center;
-    color: #333;
+.collab-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.collab-btn:hover {
+    background: #0056b3;
 }
 
 .sidebar {
@@ -125,4 +107,15 @@ button:hover {
     top: 10px;
     left: 220px;
     cursor: pointer;
+}
+
+.post {
+    margin-left: 230px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+.post-title {
+    text-align: center;
+    color: #333;
 }

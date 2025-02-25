@@ -3,7 +3,7 @@ body {
     background-color: #f3f4f6;
     margin: 0;
     margin-top: 100px;
-    margin-left: 240px;
+    /* margin-left: 240px; */
     padding: 20px;
     width: calc(100% - 270px);
     display: flex;
@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
+    width: 1200px;
+    max-width: 1200px;
     background: white;
     padding: 20px;
     border-radius: 10px;

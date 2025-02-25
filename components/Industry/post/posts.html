@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII</title>
-    <link rel="stylesheet" href="../../../nav2.css">
+    <link rel="stylesheet" href="posts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="Applications.css">
+    <link rel="stylesheet" href="../../../nav2.css">
 </head>
 <body>
 
@@ -33,28 +33,26 @@
             <li><a href="#">Login</a></li>
         </ul>
     </nav>
+    
 
     <div class="sidebar">
         <ul>
             <li><a href="../dashboard/industry.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="../Applications/Applications.html"><i class="fas fa-user"></i> View Applications</a></li>
+            <li><a href="../Applications/InstitutesApplied/InstitutesApplied.html"><i class="fas fa-user"></i> View Institutes</a></li>
             <li><a href="../post/posts.html"><i class="fas fa-briefcase"></i> View Posts</a></li>
             <li><a href="../createPost/post.html"><i class="fas fa-briefcase"></i> Create Posts</a></li>
         </ul>
     </div>
 
-   <div class="main">
-    <div class="bg-blue-50 min-h-screen w-full">
-        <h1 class="text-center lg-text-4xl md-text-2xl sm-text-xl font-bold mb-4 py-6 bg-gray-800 text-white p-4 shadow-md">
-            Select Opening to View Applications
-        </h1>
-        <div id="industry-container" class="flex flex-wrap max-w-7xl justify-center">
-            <p id="loading-text" class="text-gray-600">Loading industries...</p>
-            <p id="error-text" class="text-red-500" style="display: none;"></p>
+   <div class="post">
+    <div class="container">
+        <h1>Institute Collaboration Posts</h1>
+        <div id="postsList" class="posts-container">
+            <!-- Posts will be dynamically added here -->
         </div>
     </div>
    </div>
 
-    <script src="Applications.js"></script>
+    <script src="posts.js"></script>
 </body>
 </html>

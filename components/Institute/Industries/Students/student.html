@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="../../../../nav2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="student.js"></script>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span id="date-time"></span>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../../../../images/logo.jpg" alt="CII Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../index.html#about">About Us</a></li>
+            <li><a href="../../../Industry/dashboard/industry.html">Industries</a></li>
+            <li><a href="./../../dashboard/institute.html">Institutions</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="../../dashboard/institute.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../industry.html"><i class="fas fa-user"></i> View Industries</a></li>
+            <li><a href="../../posts/posts.html"><i class="fas fa-briefcase"></i> View Posts</a></li>
+            <li><a href="../../createPosts/post.html"><i class="fas fa-briefcase"></i> Create Posts</a></li>
+        </ul>
+    </div>
+
+   <div class="main">
+    <div class="container">
+        <h1>Student List</h1>
+        
+        <!-- File Upload Section -->
+        <div class="upload-section">
+            <label for="fileInput">Select Excel Files: (.csv format only)</label>
+            <input type="file" id="fileInput" accept=".csv">
+            <button onclick="handleUpload()">Upload</button>
+        </div>
+        
+        <!-- Table Section -->
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Student Name</th>
+                    <th>Department</th>
+                    <th>Email Id</th>
+                    <th>Applied For</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <tr><td colspan="4">Loading...</td></tr>
+            </tbody>
+        </table>
+    </div>
+   </div>
+</body>
+</html>

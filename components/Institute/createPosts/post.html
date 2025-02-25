@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CII</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="../../../nav2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <span id="date-time"></span>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../../../images/logo.jpg" alt="CII Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../../index.html#about">About Us</a></li>
+            <li><a href="../../Industry/dashboard/industry.html">Industries</a></li>
+            <li><a href="../dashboard/institute.html">Institutions</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="../dashboard/institute.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../Industries/industry.html"><i class="fas fa-user"></i> View Industries</a></li>
+            <li><a href="../posts/posts.html"><i class="fas fa-briefcase"></i> View Posts</a></li>
+            <li><a href="../createPosts/post.html"><i class="fas fa-briefcase"></i> Create Posts</a></li>
+        </ul>
+    </div>
+
+    <div class="post">
+        <div class="container">
+            <h2>Create a Post</h2>
+            <form id="postForm">
+                <label for="postTitle">Post Heading:</label>
+                <input type="text" id="postTitle" placeholder="Enter heading" required>
+    
+                <label for="postDescription">Basic Information:</label>
+                <textarea id="postDescription" rows="4" placeholder="Enter description" required></textarea>
+    
+                <label for="postDomain">Select Domain:</label>
+                <select id="postDomain" required>
+                    <option value="Audits">Audits</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Research Paper">Research Paper</option>
+                    <option value="Seminar">Seminar</option>
+                    <option value="Certification">Certification</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Case Studies">Case Studies</option>
+                    <option value="Visits">Visits</option>
+                    <option value="Other">Other</option>
+                </select>
+    
+                <div id="customDomainField" class="hidden">
+                    <label for="customDomain">Custom Domain:</label>
+                    <input type="text" id="customDomain" placeholder="Enter custom domain">
+                </div>
+
+                <label for="deliverablesRewards">Deliverables & Rewards:</label>
+                <textarea id="deliverablesRewards" rows="3" placeholder="Enter what students will receive (e.g., certificate, stipend, experience, goodies)" required></textarea>
+    
+                <label for="postImage">Upload Image:</label>
+                <input type="file" id="postImage" accept="image/*" required>
+    
+                <button type="submit">Publish Post</button>
+            </form>
+        </div>
+    
+        <div class="container">
+            <h2>Published Posts</h2>
+            <div id="postsList"></div>
+        </div>
+    </div>
+
+   
+
+    <script src="post.js"></script>
+</body>
+</html>

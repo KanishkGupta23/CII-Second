@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII</title>
-    <link rel="stylesheet" href="./industry.css">
+    <link rel="stylesheet" href="./institute.css">
     <link rel="stylesheet" href="../../../nav2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -26,9 +26,9 @@
         </div>
         <ul class="nav-links">
             <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../.././../index.html#about">About Us</a></li>
-            <li><a href="./industry.html">Industries</a></li>
-            <li><a href="../../Institute/dashboard/institute.html">Institutions</a></li>
+            <li><a href="../../../index.html#about">About Us</a></li>
+            <li><a href="../../Industry/dashboard/industry.html">Industries</a></li>
+            <li><a href="./institute.html">Institutions</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Login</a></li>
         </ul>
@@ -37,16 +37,16 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <ul>
-            <li><a href="./industry.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="../Applications/InstitutesApplied/InstitutesApplied.html"><i class="fas fa-user"></i> View Institutes</a></li>
-            <li><a href="../post/posts.html"><i class="fas fa-briefcase"></i> View Posts</a></li>
-            <li><a href="../createPost/post.html"><i class="fas fa-briefcase"></i> Create Posts</a></li>
+            <li><a href="./institute.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../Industries/industry.html"><i class="fas fa-user"></i> View Industries</a></li>
+            <li><a href="../posts/posts.html"><i class="fas fa-briefcase"></i> View Posts</a></li>
+            <li><a href="../createPosts/post.html"><i class="fas fa-briefcase"></i> Create Posts</a></li>
         </ul>
     </div>
 
     <!-- Main Content -->
     <div class="dashboard">
-        <h1 class="dashboard-title">Industry Dashboard</h1>
+        <h1 class="dashboard-title">Institute Dashboard</h1>
 
         <!-- Stats Cards -->
         <div class="stats-container">
@@ -59,8 +59,8 @@
                 <p id="totalOpenings">0</p>
             </div>
             <div class="card">
-                <h2>Total Institutes</h2>
-                <p id="totalInstitutes">0</p>
+                <h2>Total Industries</h2>
+                <p id="totalIndustries">0</p>
             </div>
             <div class="card">
                 <h2>Total Applications</h2>
@@ -74,14 +74,10 @@
                 <h3>Applications Over Time</h3>
                 <canvas id="barChart"></canvas>
             </div>
-            <div class="chart-box">
-                <h3>Application Distribution</h3>
-                <canvas id="doughnutChart"></canvas>
-            </div>
         </div>
     </div>
 
-    <script src="industry.js"></script>
+    <script src="institute.js"></script>
     
 
 </body>
