@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <p><strong>Location:</strong> ${industry.city}, ${industry.country}</p>
                 <p><strong>Contact:</strong> ${industry.contact_num || "N/A"}</p>
                 <p><strong>Established Year:</strong> ${new Date(industry.estb_year).getFullYear()}</p>
-                <a href="Students/student.html" class="button">Add Students</a>
+                <a href="application/application.html" class="button">Create Application</a>
             `;
 
             container.appendChild(card);

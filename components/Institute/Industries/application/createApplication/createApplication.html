@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Application</title>
+    <link rel="stylesheet" href="createApplication.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../../../nav2.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span id="date-time"></span>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <!-- Main Navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../../../../../images/logo.jpg" alt="CII Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../../../../../index.html">Home</a></li>
+          <li><a href="../../../../../index.html#about">About Us</a></li>
+          <li><a href="../../../../Industry/dashboard/industry.html">Industries</a></li>
+          <li>
+            <a href="../../../../Institute/dashboard/institute.html">Institutions</a>
+          </li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+  
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="../../../dashboard/institute.html"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="../../../Industries/industry.html"
+              ><i class="fas fa-user"></i> View Industries</a
+            >
+          </li>
+          <li>
+            <a href="../../../posts/posts.html"
+              ><i class="fas fa-briefcase"></i> View Posts</a
+            >
+          </li>
+          <li>
+            <a href="../../../createPosts/post.html"
+              ><i class="fas fa-briefcase"></i> Create Posts</a
+            >
+          </li>
+        </ul>
+      </div>
+
+    <header>
+        <h1>Create New Application</h1>
+    </header>
+
+    <main>
+        <form id="application-form">
+            <label for="date-applied">Date Applied:</label>
+            <input type="date" id="date-applied" required>
+
+            <label for="total-students">Total Students:</label>
+            <input type="number" id="total-students" min="1" required>
+
+            <label for="student-file">Upload Student Excel File:</label>
+            <input type="file" id="student-file" accept=".xls,.xlsx,.csv" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <script src="createApplication.js"></script>
+
+</body>
+</html>
