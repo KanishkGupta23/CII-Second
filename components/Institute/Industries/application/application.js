@@ -47,5 +47,5 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Function to handle viewing students
 function viewStudents(applicationId) {
-    window.location.href = "Students/Student.html";
+    window.location.href = "/Students/Student.html";
 }
